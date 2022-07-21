@@ -167,11 +167,12 @@ int main(void)
 	Graph *graph = create_graph_from_edges(edges, blocks, true);
 	print_graph(graph);
 	dijkstra_shortest_path(graph, 2);
+	delete_graph(graph);
 
 	graph = create_graph_from_edges(edges, blocks, false);
 	print_graph(graph);
 	dijkstra_shortest_path(graph, 2);
-
 	delete_graph(graph);
+
 	return 0;
 }
