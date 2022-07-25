@@ -174,5 +174,7 @@ int main(void)
 	dijkstra_shortest_path(graph, 2);
 	delete_graph(graph);
 
+	sizeof graph;
+
 	return 0;
 }
